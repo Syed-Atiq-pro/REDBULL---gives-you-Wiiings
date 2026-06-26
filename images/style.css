@@ -7,7 +7,7 @@
            background-image: url("../images/all redbull.png");
            background-repeat: no-repeat;
            background-size: cover;
-           
+           height: 100vh;
         }
 
         .imglogo{
@@ -61,7 +61,7 @@
         }
         .B{
             border-radius: 34px;
-            height: 150px;
+            height: 300px;
             margin:40px;
             transition: 0.3s;
             
