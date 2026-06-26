@@ -1,0 +1,133 @@
+
+        body{
+            background-color: black;
+        }
+        
+        #main{
+           background-image: url("../images/all redbull.png");
+           background-repeat: no-repeat;
+           background-size: cover;
+           height: 100vh;
+        }
+
+        .imglogo{
+            height: 100px;
+            margin: 0;
+            padding: 0;
+            opacity: 20%;
+            border-radius: 34px;
+            top:10px;
+            right: 10px;
+            position: fixed;
+            
+        }
+
+        .pic1{text-align: right;}
+
+        nav{
+            display: flex;
+            border: 2px solid white;
+            border-radius: 34px;
+            position: fixed;
+            background-color: transparent 10%;
+            
+            top:10px;
+            left:10px;
+            background-blend-mode: soft-light;
+            transition: 0.9s;
+
+        }
+        a{
+            background-color: blue;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 34px;
+            color: aliceblue;
+            opacity: 20%;
+        }
+        a:hover{
+            transform: scale(1.3);
+            background-color: red;
+            border-radius: 34px;
+            opacity: 80%;
+
+        }
+        /* end of main  */
+        #sec{
+            text-align: right;
+            background-color: blueviolet;
+            border-radius: 34px;
+            margin-top: 200px;
+        }
+        .B{
+            border-radius: 34px;
+            height: 300px;
+            margin:40px;
+            transition: 0.3s;
+            
+        }
+        .B:hover{
+            transform: scale(1.1);
+            background-color: aliceblue;
+            
+        }
+        .card{
+            display: flex;
+        }
+        .matter{
+            background-color: azure;
+            border-radius: 34px;
+            margin: 40px;
+            overflow: auto;
+            text-align: center;
+            font-size: 25px;
+        }
+      
+
+        /* end of sec  */
+        #three{
+            background-color: silver;
+            border-radius: 34px;
+            margin-top: 40px;
+            padding: 100px;
+            
+        }
+        form{
+            background-image:url("../images/redbull.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* height: 100vh; */
+            text-align: left;
+            border: 2px solid black;
+            margin: 20px;
+            padding:100px;
+            border-radius: 34px;
+            font-size: 20px;
+            font-weight: 100;
+            background-color:white;
+           
+        }
+        form div{
+            margin: 40px;
+            color:white;
+            font-size: 20px;
+            border-radius: 34px;
+            size: 20px;
+        }
+        .btn input{
+            background-color:blue;
+            color:silver;
+            transition: 0.3s;
+            font-size: 40px;
+            border-radius: 34px;
+            margin: 30px;
+        }
+        .btn input:hover{
+            transform: scale(1.1);
+            background-color: red;
+            color:silver;
+            opacity: 30%;
+          
+
+        }
+       
