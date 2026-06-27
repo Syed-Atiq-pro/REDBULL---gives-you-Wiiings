@@ -1,134 +1,345 @@
+/* ==========================
+   RESET
+========================== */
 
-        body{
-            background-color: black;
-        }
-        
-        #main{
-           background-image: url("../images/all redbull.png");
-           background-repeat: no-repeat;
-           background-size: cover;
-           height: 100vh;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-        .imglogo{
-            height: 100px;
-            margin: 0;
-            padding: 0;
-            opacity: 20%;
-            border-radius: 34px;
-            top:10px;
-            right: 10px;
-            position: fixed;
-            
-        }
+body{
+    background:#000;
+    color:white;
+}
 
-        .pic1{text-align: right;}
+/* ==========================
+   HERO SECTION
+========================== */
 
-        nav{
-            display: flex;
-            border: 2px solid white;
-            border-radius: 34px;
-            position: fixed;
-            background-color: transparent 10%;
-                                   
-            top:10px;
-            left:10px;
-            background-blend-mode: soft-light;
-            transition: 0.9s;
+#main{
+    background:url("../images/all redbull.png") center/cover no-repeat;
+    min-height:100vh;
+    position:relative;
+}
 
-        }
-        a{
-            text-decoration: none;
-            background-color: blue;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 34px;
-            color: aliceblue;
-            opacity: 20%;
-        }
-        a:hover{
-            transform: scale(1.3);
-            background-color: red;
-            border-radius: 34px;
-            opacity: 80%;
+/* ==========================
+   NAVBAR
+========================== */
 
-        }
-        /* end of main  */
-        #sec{
-            text-align: right;
-            background-color: blueviolet;
-            border-radius: 34px;
-            margin-top: 200px;
-        }
-        .B{
-            border-radius: 34px;
-            height: 300px;
-            margin:40px;
-            transition: 0.3s;
-            
-        }
-        .B:hover{
-            transform: scale(1.1);
-            background-color: aliceblue;
-            
-        }
-        .card{
-            display: flex;
-        }
-        .matter{
-            background-color: azure;
-            border-radius: 34px;
-            margin: 40px;
-            overflow: auto;
-            text-align: center;
-            font-size: 25px;
-        }
-      
+.navbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
 
-        /* end of sec  */
-        #three{
-            background-color: silver;
-            border-radius: 34px;
-            margin-top: 40px;
-            padding: 100px;
-            
-        }
-        form{
-            background-image:url("../images/redbull.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* height: 100vh; */
-            text-align: left;
-            border: 2px solid black;
-            margin: 20px;
-            padding:100px;
-            border-radius: 34px;
-            font-size: 20px;
-            font-weight: 100;
-            background-color:white;
-           
-        }
-        form div{
-            margin: 40px;
-            color:white;
-            font-size: 20px;
-            border-radius: 34px;
-            size: 20px;
-        }
-        .btn input{
-            background-color:blue;
-            color:silver;
-            transition: 0.3s;
-            font-size: 40px;
-            border-radius: 34px;
-            margin: 30px;
-        }
-        .btn input:hover{
-            transform: scale(1.1);
-            background-color: red;
-            color:silver;
-            opacity: 30%;
-          
+.logo img{
+    width:80px;
+    border-radius:15px;
+}
 
-        }
-       
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ff0000;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    color:white;
+}
+
+.hero p{
+    font-size:25px;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#004cff;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:red;
+    transform:scale(1.05);
+}
+
+/* ==========================
+   PRODUCTS
+========================== */
+
+#sec{
+    padding:80px 8%;
+    background:#111;
+}
+
+.heading{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:60px;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    margin-bottom:60px;
+    background:#1b1b1b;
+    border-radius:20px;
+    padding:30px;
+}
+
+.matter{
+    flex:1;
+}
+
+.matter h2{
+    color:#ffd000;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.matter p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.B{
+    width:300px;
+    max-width:100%;
+    transition:.4s;
+}
+
+.B:hover{
+    transform:scale(1.08);
+}
+
+/* ==========================
+   FORM
+========================== */
+
+#three{
+    background:#222;
+    padding:80px 8%;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    background:url("../images/redbull.png") center/cover no-repeat;
+    padding:40px;
+    border-radius:20px;
+}
+
+form h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:white;
+}
+
+form div{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.button-area{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:30px;
+}
+
+.button-area input{
+    width:180px;
+    cursor:pointer;
+    background:#005eff;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+.button-area input:hover{
+    background:red;
+    transform:scale(1.05);
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media(max-width:992px){
+
+    .hero h1{
+        font-size:55px;
+    }
+
+    .card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .matter h2{
+        font-size:28px;
+    }
+
+    .matter p{
+        font-size:18px;
+    }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .logo img{
+        width:65px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .btn{
+        padding:12px 25px;
+    }
+
+    .heading{
+        font-size:32px;
+    }
+
+    .card{
+        padding:20px;
+    }
+
+    .matter h2{
+        font-size:24px;
+    }
+
+    .matter p{
+        font-size:16px;
+    }
+
+    .B{
+        width:220px;
+    }
+
+    form{
+        padding:25px;
+    }
+
+    .button-area{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .button-area input{
+        width:100%;
+    }
+
+}
+
+/* ==========================
+   SMALL PHONES
+========================== */
+
+@media(max-width:480px){
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .nav-links a{
+        font-size:15px;
+    }
+
+    .heading{
+        font-size:28px;
+    }
+
+    .matter h2{
+        font-size:20px;
+    }
+
+    .matter p{
+        font-size:15px;
+    }
+
+}
