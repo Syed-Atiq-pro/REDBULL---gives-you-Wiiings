@@ -30,7 +30,7 @@
             border-radius: 34px;
             position: fixed;
             background-color: transparent 10%;
-                                   text-decoration:none;
+                                   
             top:10px;
             left:10px;
             background-blend-mode: soft-light;
@@ -38,7 +38,7 @@
 
         }
         a{
-            text-decoration:none;
+            text-decoration: none;
             background-color: blue;
             padding-left: 10px;
             padding-right: 10px;
